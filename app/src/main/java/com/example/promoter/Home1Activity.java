@@ -32,7 +32,7 @@ public class Home1Activity extends AppCompatActivity {
         btnhome1_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Home1Activity.this, ThreeActivity.class);
+                Intent intent = new Intent(Home1Activity.this, FourActivity.class);
                 startActivity(intent);
             }
         });
