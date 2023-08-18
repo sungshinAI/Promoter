@@ -5,66 +5,92 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
     tools:context=".TwoActivity">
 
 
-    <TextView
-        android:id="@+id/tv2_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="2/3"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="55dp" />
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
 
     <TextView
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="날짜와 시간대를 정해볼까요?"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="95dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
-    <DatePicker
-        android:id="@+id/datePicker"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:calendarViewShown="false"
-        android:datePickerMode="spinner"
-        android:spinnersShown="true"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="167dp" />
+    <TextView
+        android:id="@+id/tv2_1"
+        android:layout_width="33dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:text="2/3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TimePicker
         android:id="@+id/timePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:timePickerMode="spinner"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="403dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datePicker" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:spinnersShown="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2_1" />
 
     <Button
         android:id="@+id/btn2_1"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttonround"
         android:backgroundTint="#1463fc"
         android:text="완료"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="292dp"
-        tools:layout_editor_absoluteY="646dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/back"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="7dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-47dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-190dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

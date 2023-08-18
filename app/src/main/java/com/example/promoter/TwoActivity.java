@@ -56,7 +56,7 @@ public class TwoActivity extends AppCompatActivity {
                 Toast.makeText(TwoActivity.this, timeDifferenceMessage, Toast.LENGTH_SHORT).show();
 
                 // Home2 Activity로 전환
-                Intent intent = new Intent(TwoActivity.this, Home2Activity.class);
+                Intent intent = new Intent(TwoActivity.this, ThreeActivity.class);
                 startActivity(intent);
             }
         });

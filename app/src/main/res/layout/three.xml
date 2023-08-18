@@ -6,25 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".TwoActivity">
 
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginStart="16dp"
         android:text="생성된 약속 링크를 공유하고\n친구의 일정을 알아보세요"
         android:textColor="#000000"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/back"
-        tools:layout_editor_absoluteX="24dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/tv1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="3/3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
         android:id="@+id/btn9_1"
         android:layout_width="280dp"
         android:layout_height="40dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/buttonround"
-        android:backgroundTint="#661463FC"
+        android:backgroundTint="#D9D9D9"
         android:gravity="center"
         android:text="지금 공유할게요"
         android:textColor="#000000"
@@ -38,7 +60,7 @@
         android:id="@+id/tv9_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="120dp"
         android:gravity="center"
         android:text="http://www.wemeethere.site"
         android:textColor="#000000"
@@ -52,7 +74,7 @@
         android:id="@+id/btn9_2"
         android:layout_width="280dp"
         android:layout_height="40dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/buttonround"
         android:backgroundTint="#D9D9D9"
         android:gravity="center"
@@ -81,12 +103,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/back"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
