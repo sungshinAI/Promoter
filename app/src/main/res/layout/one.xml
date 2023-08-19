@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="약속 정보를 입력해주세요."
+        android:text="약속 정보를 입력해주세요"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -76,7 +76,7 @@
         android:background="@android:color/transparent"
         android:text="아직 안 정해졌어요!"
         android:textColor="#80000000"
-        android:textSize="12sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameEditText2" />
