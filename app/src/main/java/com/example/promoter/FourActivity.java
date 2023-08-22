@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class FourActivity extends AppCompatActivity {
 
@@ -44,9 +45,8 @@ public class FourActivity extends AppCompatActivity {
         btn9_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { // btn9_3 버튼은 클릭했을 때 이 안쪽을 실행해라.
-                // 지금 공유하면 10page로 넘아가면 되는데 나중에 공유하면 어케 되는거임..?
-                // 9에서 10으로 넘어가는게 자연스러운게 맞나?
                 // 화면 전환
+                Toast.makeText(FourActivity.this, "초대링크가 클립보드에 복사되었습니다", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(FourActivity.this, Home2Activity.class);
                 startActivity(intent); // 액티비티 이동.
             }

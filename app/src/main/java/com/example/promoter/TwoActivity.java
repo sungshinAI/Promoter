@@ -52,8 +52,9 @@ public class TwoActivity extends AppCompatActivity {
 
                 // Start a timer or perform other actions with the time difference
                 // For now, let's display a toast message with the time difference
-                String timeDifferenceMessage = "Time difference: " + timeDifferenceSeconds + " seconds";
-                Toast.makeText(TwoActivity.this, timeDifferenceMessage, Toast.LENGTH_SHORT).show();
+                // String timeDifferenceMessage = "Time difference: " + timeDifferenceSeconds + " 남았습니다";
+                // Toast.makeText(TwoActivity.this, timeDifferenceMessage, Toast.LENGTH_SHORT).show();
+                Toast.makeText(TwoActivity.this, "타이머가 설정되었습니다", Toast.LENGTH_SHORT).show();
 
                 // Home2 Activity로 전환
                 Intent intent = new Intent(TwoActivity.this, ThreeActivity.class);
